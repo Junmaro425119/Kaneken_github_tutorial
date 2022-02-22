@@ -128,7 +128,9 @@
 	/* 演習の編集範囲 はじめ */
 
 	/* 演習1 ここから */
-	function add(){}
+	function add(){
+		eqlNum.value = parseFloat(midNum[0].value) + parseFloat(midNum[1].value);
+	}
 	function sub(){}
 	/* 演習1 ここまで */
 
