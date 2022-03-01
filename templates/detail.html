@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2 class='m-5' style='text-align: center;'>詳細</h2>
+<div class="card w-50 mb-3" style="margin: auto;">
+    <div class="card-body">
+      <h2 class="card-title">{{ post.title }}<span class='ml-3' style='font-size: 0.5em;'>日付 : {{ post.due.date() }}</span></h2>  
+      <p>{{ post.detail }}</p>
+      <a class="btn btn-outline-success btn-sm" href="/" role='button'>Return</a>
+      <a class="btn btn-success btn-sm" href="update/{{ post.id }}" role='button'>Update</a>
+    </div>
+</div>
+{% endblock %}
